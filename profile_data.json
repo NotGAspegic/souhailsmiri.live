@@ -1,0 +1,207 @@
+{
+    "public_identifier": "sousmiri",
+    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sousmiri/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192302Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=ee911a5a8e82b0948af9f89b0c9edce5f95c42ca22851445920a27fd949016bc",
+    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sousmiri/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192303Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=720d9a640a532f006b5696f83b94cff5fbc64381cb9a62a0391ed5eff809a1fc",
+    "first_name": "Souhail",
+    "last_name": "Smiri",
+    "full_name": "Souhail Smiri",
+    "follower_count": 377,
+    "occupation": "Embedded Systems intern at Quebec Training Center",
+    "headline": "Software Developer",
+    "summary": "I am an enthusiastic Embedded Systems student currently studying at ISAMM in quest for new opportunities to show my dedication towards programming, IOT, and robotics, and I am also passionate about mobile app development and video game development.\nI am eager to work in a collaborative environment and hone my soft skills.",
+    "country": "TN",
+    "country_full_name": "Tunisia",
+    "city": "Manouba",
+    "state": null,
+    "experiences": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 2,
+                "year": 2024
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 5,
+                "year": 2024
+            },
+            "company": "Quebec Training Center",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/quebec-training-center",
+            "company_facebook_profile_url": null,
+            "title": "Embedded Systems intern",
+            "description": "\u2022 Developed a Raspberry Pi cluster using Kubernetes, focusing on the design and implementation of a scalable, distributed computing environment.\n\u2022 Configured and managed Kubernetes for container orchestration, ensuring efficient deployment and operation of applications across the cluster.\n\u2022 Implemented networking and load balancing solutions to optimize communication and resource distribution among nodes.",
+            "location": "Manouba, Tunisia",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/quebec-training-center/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192303Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=197122eb606506dd221a811d47d7c6eb0635ddc3b1bf136cdc6a5b6f1f68c929"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 6,
+                "year": 2023
+            },
+            "ends_at": {
+                "day": 31,
+                "month": 8,
+                "year": 2023
+            },
+            "company": "Nexters",
+            "company_linkedin_profile_url": "https://www.linkedin.com/company/nexters-agency",
+            "company_facebook_profile_url": null,
+            "title": "Full-stack Developer",
+            "description": "\u2022 Assisted in the development of a Customer Relationship Management (CRM) system, encompassing both front-end and back-end components, using the MERN stack (MongoDB, Express.js, React, Node.js).\n\u2022 Implemented RESTful APIs, enhancing the system's ability to retrieve and manipulate customer information.\n\u2022 Participated in debugging, troubleshooting, and testing to improve the system's overall performance and reliability.",
+            "location": "Tunis, Tunisia",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/nexters-agency/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192303Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=115e0c6f951685181f5d1fb55cad564b3d3126a4cc13d72307eb57c58fe698ed"
+        }
+    ],
+    "education": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 10,
+                "year": 2021
+            },
+            "ends_at": null,
+            "field_of_study": "Computer Science",
+            "degree_name": "Bachelor's degree",
+            "school": "Institut Sup\u00e9rieur des Arts Multim\u00e9dia de la Manouba(ISAMM)",
+            "school_linkedin_profile_url": "https://www.linkedin.com/company/12612850/",
+            "school_facebook_profile_url": null,
+            "description": "Skills: Programming \u00b7 Embedded Linux \u00b7 Algorithms \u00b7 Computer Science \u00b7 Creative Problem Solving",
+            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/isamm-manouba/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192303Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=71e005f77b46e5400b7da2bdfe957bd3d88557998edfcc35ddfd9ec53088eb26",
+            "grade": null,
+            "activities_and_societies": null
+        }
+    ],
+    "languages": [
+        "Arabic",
+        "English",
+        "French"
+    ],
+    "languages_and_proficiencies": [
+        {
+            "name": "Arabic",
+            "proficiency": "NATIVE_OR_BILINGUAL"
+        },
+        {
+            "name": "English",
+            "proficiency": "PROFESSIONAL_WORKING"
+        },
+        {
+            "name": "French",
+            "proficiency": "LIMITED_WORKING"
+        }
+    ],
+    "accomplishment_organisations": [],
+    "accomplishment_publications": [],
+    "accomplishment_honors_awards": [],
+    "accomplishment_patents": [],
+    "accomplishment_courses": [],
+    "accomplishment_projects": [],
+    "accomplishment_test_scores": [],
+    "volunteer_work": [],
+    "certifications": [
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 5,
+                "year": 2023
+            },
+            "ends_at": null,
+            "name": "EF SET English Certificate 66/100 (C1 Advanced)",
+            "license_number": null,
+            "display_source": "efset.org",
+            "authority": "EF Standard English Test (EF SET) ",
+            "url": "https://www.efset.org/cert/xY8uM5"
+        },
+        {
+            "starts_at": {
+                "day": 1,
+                "month": 5,
+                "year": 2023
+            },
+            "ends_at": null,
+            "name": "Fundamentals of digital marketing",
+            "license_number": "MPK MMA ST7",
+            "display_source": "google.com",
+            "authority": "Google",
+            "url": "https://drive.google.com/file/d/1hpeBxB1rkwLOxP_FvMiTDn2YJvHVbfxw/view?usp=sharing"
+        }
+    ],
+    "connections": 378,
+    "people_also_viewed": [
+        {
+            "link": "https://www.linkedin.com/in/abirabidi?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADg6XsEB7S4V7vqGHra6SoA7agMbAsMbp04",
+            "name": "Abidi Abir",
+            "summary": "Software engineering student",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/youssef-namouchi-41a326241?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADwGwNYBWYApdgqOpek6X_gAyC1rXEphFFs",
+            "name": "Youssef Namouchi",
+            "summary": "Computer sciences student",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/nesrine-guesmi?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACfy9jEBHXKxu5joUadvgAQs2-mKOOWwA9U",
+            "name": "Nesrine GUESMI",
+            "summary": "Cloud & DevOps Engineer | DevSecOps | GitOps | AWS Certified | Empowering Teams in Cloud Excellence",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/khouloud-maamouri?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACGihyIBTBdmgNkEsrc5OQBFYlrOF35HRVw",
+            "name": "Khouloud MAAMOURI",
+            "summary": "Android Developer",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/islem-mohsni-426469327?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAFJ4xR4B6Au3kX42VSblb3EYFCUqS-HnNWk",
+            "name": "Islem Mohsni",
+            "summary": "Computer science student  at Higher Institute of Multimedia Arts of Manouba (ISAMM)",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/melek-kobbi?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAABbuiAEBFjqDNgIb0GT2hVL6obGGslptuDA",
+            "name": "Melek Kobbi",
+            "summary": "\ud835\uddd7\ud835\uddee\ud835\ude01\ud835\uddee \ud835\uddd4\ud835\uddfb\ud835\uddee\ud835\uddf9\ud835\ude06\ud835\ude00\ud835\ude01 | Power BI | SQL | Python | Talend | Power Platform",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/houda-mabrouki-istqb%C2%AE-certified-tester-1228a8159?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACYKkKoBeH_cZNiyhmZnccBmtpwfFNs7c10",
+            "name": "Houda Mabrouki, ISTQB\u00ae Certified Tester",
+            "summary": "QA Engineer",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/molka-affes?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADZDp4MBvHDWe1hBpysvIjrF4Z9yJZYePUo",
+            "name": "Molka AFFES",
+            "summary": "| Digital Marketing Manager |",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/nour-el-imen-darragi-25635a2a6?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEm8HeIBpA_Qux7ZOpgPLQG6aFNmucNMooI",
+            "name": "Nour El Imen Darragi",
+            "summary": "IOT & Embedded Systems Student",
+            "location": null
+        },
+        {
+            "link": "https://www.linkedin.com/in/lenglizomar?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC5t0K4Bwhuf5CRNkmIRP_mQuWRDn_JXeio",
+            "name": "omar lengliz",
+            "summary": "\u00c9l\u00e8ve ing\u00e9nieur en informatique  | D\u00e9veloppeur Full Stack | Passionn\u00e9 de D\u00e9veloppement Web &  Mobile || VR/AR || Blockchain",
+            "location": null
+        }
+    ],
+    "recommendations": [],
+    "activities": [],
+    "similarly_named_profiles": [],
+    "articles": [],
+    "groups": [],
+    "skills": [],
+    "inferred_salary": null,
+    "gender": null,
+    "birth_date": null,
+    "industry": null,
+    "extra": null,
+    "interests": [],
+    "personal_emails": [],
+    "personal_numbers": []
+}

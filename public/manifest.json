@@ -1,0 +1,61 @@
+{
+    "theme_color": "#000",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Souhail Smiri",
+    "short_name": "Souhail Smiri",
+    "description": "I am currently perusing my Masters Degree in Computer Science. I can code in Python, C, C++, etc. I also work on React & Next.js. This is my portfolio.",
+    "icons": [
+      {
+        "src": "icons/icon-16x16.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-24x24.png",
+        "sizes": "24x24",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "About me",
+        "url": "/about",
+        "icons": [
+          {
+            "src": "shortcuts/about.png",
+            "sizes": "202x202",
+            "type": "image/png",
+            "purpose": "any"
+          }
+        ]
+      }
+    ]
+  }

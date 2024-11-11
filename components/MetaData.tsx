@@ -52,8 +52,8 @@ export default function MetaData({
         },
         {
           rel: "apple-touch-icon",
-          href: "/icons/icon-192x192.png",
-          sizes: "192x192",
+          href: "/icons/icon-128x128.png",
+          sizes: "128x128",
         },
       ]}
       openGraph={{
