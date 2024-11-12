@@ -1,31 +1,23 @@
-import { motion } from "framer-motion";
-
-export default function Logo({ className }: { className: string }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width={512}
-      height={512}
-      viewBox="0 0 512 512"
-      fill="none"
-      className={className}
+import * as React from "react"
+import { SVGProps } from "react"
+import {motion} from "framer-motion"
+const Logo = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    //width="128.000000pt"
+    //height="128.000000pt"
+    viewBox="0 0 128.000000 128.000000"
+    preserveAspectRatio="xMidYMid meet"
+    {...props}
+  >
+    <g
+      transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
+      fill="#000000"
+      stroke="none"
     >
-      <motion.path
-        initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 3, ease: "easeInOut" }}
-        d="M18 0V380.671L260.5 495.5L498 385.055V0M67 17.5H431V126H85V81"
-        stroke="currentColor"
-        strokeWidth="35"
-      />
-      <motion.path
-        initial={{ pathLength: 0 }}
-        animate={{ pathLength: 1 }}
-        transition={{ duration: 3, ease: "easeInOut" }}
-        d="M67.5 327.5L258 416L431.5 341.5V264H84.5V183.5H449"
-        stroke="currentColor"
-        strokeWidth="35"
-      />
-    </svg>
-  );
-}
+      <path d="M75 1208 c-3 -7 -4 -260 -3 -563 l3 -550 578 -3 578 -2 -3 22 -3 23 -552 3 -553 2 -2 537 c-3 503 -4 538 -21 541 -9 2 -19 -2 -22 -10z" />
+      <path d="M1034 1100 c-180 -26 -296 -161 -344 -398 -34 -170 -77 -260 -150 -312 -46 -33 -143 -60 -214 -60 -63 0 -89 -12 -79 -36 13 -34 197 -9 286 39 108 57 160 147 200 343 30 144 64 222 126 284 56 56 104 79 192 94 37 6 71 14 75 18 9 9 -15 38 -30 37 -6 -1 -34 -5 -62 -9z" />
+    </g>
+  </svg>
+)
+export default Logo
