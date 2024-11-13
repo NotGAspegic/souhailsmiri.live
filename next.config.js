@@ -20,12 +20,11 @@ module.exports = withPWA({
       "imgur.com",
       "i.imgur.com",
       "cutt.ly",
+      "media.licdn.com",
       "activity-graph.herokuapp.com",
       "i.scdn.co", // images from spotify
       "images.unsplash.com",
-      "m.media-amazon.com", // for imdb images
       "cdn.sanity.io", // sanity images
-      "image.tmdb.org", // tmdb images
       "scontent.cdninstagram.com", // instagram media
     ],
   },

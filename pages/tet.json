@@ -1,7 +1,7 @@
 {
     "public_identifier": "sousmiri",
-    "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sousmiri/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192440Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=d2e40a68b997927fa723cb3a17a83d3fea2cfea5756676c31ded8a4ed69f3a90",
-    "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sousmiri/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192440Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=2f1dfc5901c1582453e721c25c0761f210dffa756b704f5b347a92a5fc05b521",
+    "profile_pic_url": "https://i.imgur.com/pqq6G9u.png",
+    "background_cover_image_url": "https://media.licdn.com/dms/image/v2/D4D16AQENpFXoiqEnUw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1683563644746?e=1736985600&v=beta&t=qUiYia0GcAZ2XyE5Fg_mPCfL2OhLGAfXaeLt5LkX2cw",
     "first_name": "Souhail",
     "last_name": "Smiri",
     "full_name": "Souhail Smiri",
@@ -15,42 +15,49 @@
     "state": null,
     "experiences": [
         {
-            "starts_at": {
-                "day": 1,
-                "month": 2,
-                "year": 2024
-            },
-            "ends_at": {
-                "day": 31,
-                "month": 5,
-                "year": 2024
-            },
             "company": "Quebec Training Center",
             "company_linkedin_profile_url": "https://www.linkedin.com/company/quebec-training-center",
             "company_facebook_profile_url": null,
-            "title": "Embedded Systems intern",
-            "description": "\u2022 Developed a Raspberry Pi cluster using Kubernetes, focusing on the design and implementation of a scalable, distributed computing environment.\n\u2022 Configured and managed Kubernetes for container orchestration, ensuring efficient deployment and operation of applications across the cluster.\n\u2022 Implemented networking and load balancing solutions to optimize communication and resource distribution among nodes.",
-            "location": "Manouba, Tunisia",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/quebec-training-center/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192440Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=018177cbe2c65792460c7318a9b52b16fabffd47585efe3c621d3fcbe547dcea"
+            "logo_url": "https://media.licdn.com/dms/image/v2/D4E0BAQEpq5yLclHHsQ/company-logo_200_200/company-logo_200_200/0/1686697241786?e=1739404800&v=beta&t=AlPiouJ1qujzQFjjepTSqCbFY-NaGVxNNurMKRiHi90",
+            "job_titles": [
+                {
+                    "starts_at": {
+                        "day": 1,
+                        "month": 2,
+                        "year": 2024
+                    },
+                    "ends_at": {
+                        "day": 31,
+                        "month": 5,
+                        "year": 2024
+                    },
+                    "title": "Embedded Systems Intern",
+                    "description": "\u2022 Developed a Raspberry Pi cluster using Kubernetes, focusing on the design and implementation of a scalable, distributed computing environment.\n\u2022 Configured and managed Kubernetes for container orchestration, ensuring efficient deployment and operation of applications across the cluster.\n\u2022 Implemented networking and load balancing solutions to optimize communication and resource distribution among nodes.",
+                    "location": "Manouba, Tunisia"
+                }
+            ]
         },
         {
-            "starts_at": {
-                "day": 1,
-                "month": 6,
-                "year": 2023
-            },
-            "ends_at": {
-                "day": 31,
-                "month": 8,
-                "year": 2023
-            },
             "company": "Nexters",
             "company_linkedin_profile_url": "https://www.linkedin.com/company/nexters-agency",
-            "company_facebook_profile_url": null,
-            "title": "Full-stack Developer",
-            "description": "\u2022 Assisted in the development of a Customer Relationship Management (CRM) system, encompassing both front-end and back-end components, using the MERN stack (MongoDB, Express.js, React, Node.js).\n\u2022 Implemented RESTful APIs, enhancing the system's ability to retrieve and manipulate customer information.\n\u2022 Participated in debugging, troubleshooting, and testing to improve the system's overall performance and reliability.",
-            "location": "Tunis, Tunisia",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/nexters-agency/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192440Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=27036ff845c4772cbc9237747c94f186c38a9c292cfd6c7cf8833e97a9017b21"
+            "logo_url": "https://media.licdn.com/dms/image/v2/D4D0BAQG2nDBi45d_LQ/company-logo_200_200/company-logo_200_200/0/1665795131917?e=1739404800&v=beta&t=5MX8ftjU9jrKS_Z9CEhp35m6ij98m8rXc_vvcLaV2Fc",
+            "job_titles": [
+                {
+                    "starts_at": {
+                        "day": 1,
+                        "month": 6,
+                        "year": 2023
+                    },
+                    "ends_at": {
+                        "day": 31,
+                        "month": 8,
+                        "year": 2023
+                    },
+                    "title": "Full-stack Developer",
+                    "description": "\u2022 Assisted in the development of a Customer Relationship Management (CRM) system, encompassing both front-end and back-end components, using the MERN stack (MongoDB, Express.js, React, Node.js).\n\u2022 Implemented RESTful APIs, enhancing the system's ability to retrieve and manipulate customer information.\n\u2022 Participated in debugging, troubleshooting, and testing to improve the system's overall performance and reliability.",
+                    "location": "Tunis, Tunisia"
+                }
+            ]
         }
     ],
     "education": [
@@ -67,7 +74,7 @@
             "school_linkedin_profile_url": "https://www.linkedin.com/company/12612850/",
             "school_facebook_profile_url": null,
             "description": "Skills: Programming \u00b7 Embedded Linux \u00b7 Algorithms \u00b7 Computer Science \u00b7 Creative Problem Solving",
-            "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/isamm-manouba/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20241111%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20241111T192440Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=7f7a19f398275bb4a9474b61122cd13090eec187c1bfb74aeaaa2338716f7296",
+            "logo_url": "https://media.licdn.com/dms/image/v2/C4D0BAQERgAftLS4tOA/company-logo_200_200/company-logo_200_200/0/1630546659504/higher_institute_of_multimedia_of_manouba_isamm_logo?e=1739404800&v=beta&t=hBusq_c1Z8iJY9_e90ppDI_SuqWPputVwYgI9cL9P8c",
             "grade": null,
             "activities_and_societies": null
         }

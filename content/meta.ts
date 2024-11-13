@@ -4,7 +4,7 @@ const pageMeta: PageMeta = {
   home: {
     title: "",
     description:
-      "Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Bachelor's degree in Computer Science.",
+      "Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Master's degree in Computer Science.",
     image: "https://imgur.com/KeJgIVl.png",
     keywords: "portfolio Souhail, portfolio NotGAspegic",
   },
