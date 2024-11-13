@@ -4,20 +4,24 @@ import {motion} from "framer-motion"
 const Logo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    //width="128.000000pt"
-    //height="128.000000pt"
-    viewBox="0 0 128.000000 128.000000"
-    preserveAspectRatio="xMidYMid meet"
+    //width={170.667}
+    //height={170.667}
+    viewBox="0 0 128 128"
+    fill="none"
     {...props}
   >
-    <g
-      transform="translate(0.000000,128.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
-      stroke="none"
-    >
-      <path d="M75 1208 c-3 -7 -4 -260 -3 -563 l3 -550 578 -3 578 -2 -3 22 -3 23 -552 3 -553 2 -2 537 c-3 503 -4 538 -21 541 -9 2 -19 -2 -22 -10z" />
-      <path d="M1034 1100 c-180 -26 -296 -161 -344 -398 -34 -170 -77 -260 -150 -312 -46 -33 -143 -60 -214 -60 -63 0 -89 -12 -79 -36 13 -34 197 -9 286 39 108 57 160 147 200 343 30 144 64 222 126 284 56 56 104 79 192 94 37 6 71 14 75 18 9 9 -15 38 -30 37 -6 -1 -34 -5 -62 -9z" />
-    </g>
+    <motion.path d="M7.5 7.2c-.3.7-.4 26-.3 56.3l.3 55 57.8.3 57.8.2-.3-2.2-.3-2.3-55.2-.3L12 114l-.2-53.7C11.5 10 11.4 6.5 9.7 6.2c-.9-.2-1.9.2-2.2 1z"
+    initial={{ pathLength: 0 }}
+    animate={{ pathLength: 1 }}
+    transition={{ duration: 3, ease: "easeInOut" }}
+    stroke="currentColor"
+    strokeWidth="5" />
+    <motion.path d="M103.4 18c-18 2.6-29.6 16.1-34.4 39.8-3.4 17-7.7 26-15 31.2-4.6 3.3-14.3 6-21.4 6-6.3 0-8.9 1.2-7.9 3.6 1.3 3.4 19.7.9 28.6-3.9 10.8-5.7 16-14.7 20-34.3 3-14.4 6.4-22.2 12.6-28.4 5.6-5.6 10.4-7.9 19.2-9.4 3.7-.6 7.1-1.4 7.5-1.8.9-.9-1.5-3.8-3-3.7-.6.1-3.4.5-6.2.9z"
+    initial={{ pathLength: 0 }}
+    animate={{ pathLength: 1 }}
+    transition={{ duration: 3, ease: "easeInOut" }}
+    stroke="currentColor"
+    strokeWidth="5" />
   </svg>
 )
 export default Logo

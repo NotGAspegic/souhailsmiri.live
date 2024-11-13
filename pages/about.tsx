@@ -6,10 +6,10 @@ import { IStaticPage } from "@lib/interface/sanity";
 import Image from "next/image";
 import StaticPage from "@components/StaticPage";
 import classNames from "classnames";
+import { getStaticPageFromSlug } from "@lib/sanityContent";
 import { getUserDataValue } from "@lib/supabase";
 import { months } from "@utils/date";
 import { motion } from "framer-motion";
-import MDXContent from "@lib/MDXContent";
 import pageMeta from "@content/meta";
 
 export default function About({
@@ -146,7 +146,7 @@ export default function About({
 }
 
 export async function getStaticProps() {
-  const about = await new MDXContent("static_pages").getPostFromSlug("about");
+  const about = await getStaticPageFromSlug("about");
 
   const { data: linkedin } = await getUserDataValue("linkedin");
 
