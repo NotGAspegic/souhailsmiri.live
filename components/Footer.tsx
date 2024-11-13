@@ -53,7 +53,6 @@ export default function Footer({
               .slice(5, navigationRoutes.length)
               .map((route, index) => {
                 let text = route;
-                if (route === "rss") text = "RSS";
                 return <FooterLink key={index} route={route} text={text} />;
               })}
           </div>

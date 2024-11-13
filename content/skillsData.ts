@@ -12,11 +12,18 @@ import {
   SiTypescript,
   SiReact,
   SiC,
+  SiCsharp,
   SiCplusplus,
   SiFigma,
   SiSupabase,
   SiNodedotjs,
-  SiDjango,
+  SiArduino,
+  SiKubernetes,
+  SiUnity,
+  SiLinux,
+  SiMongodb,
+  SiAndroidstudio,
+  SiRaspberrypi,
 } from "react-icons/si";
 
 const skills: SkillType[] = [
@@ -57,12 +64,16 @@ const skills: SkillType[] = [
     Icon: SiCplusplus,
   },
   {
+    name: "C#",
+    Icon: SiCsharp,
+  },
+  {
     name: "Python",
     Icon: SiPython,
   },
   {
-    name: "Django",
-    Icon: SiDjango,
+    name: "MongoDB",
+    Icon: SiMongodb,
   },
   {
     name: "MySQL",
@@ -77,6 +88,10 @@ const skills: SkillType[] = [
     Icon: SiFirebase,
   },
   {
+    name: "Android Studio",
+    Icon: SiAndroidstudio,
+  },
+  {
     name: "Supabase",
     Icon: SiSupabase,
   },
@@ -87,6 +102,26 @@ const skills: SkillType[] = [
   {
     name: "Figma",
     Icon: SiFigma,
+  },
+  {
+    name: "Arduino",
+    Icon: SiArduino,
+  },
+  {
+    name: "Unity",
+    Icon: SiUnity,
+  },
+  {
+    name: "Kubernetes",
+    Icon: SiKubernetes,
+  },
+  {
+    name: "Raspberry Pi",
+    Icon: SiRaspberrypi,
+  },
+  {
+    name: "Linux",
+    Icon: SiLinux,
   },
 ];
 

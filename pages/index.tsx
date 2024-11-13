@@ -25,7 +25,6 @@ export default function Home() {
         <Metadata
           title="Souhail Smiri"
           description={pageMeta.home.description}
-          previewImage={pageMeta.home.image}
           keywords={pageMeta.home.keywords}
         />
         <div className="relative max-w-4xl mx-auto dark:bg-darkPrimary dark:text-gray-100 2xl:max-w-5xl 3xl:max-w-7xl">
@@ -43,12 +42,11 @@ export default function Home() {
               >
                 <Image
                   src={homeProfileImage}
-                  className="rounded-full shadow filter saturate-0"
+                  className="rounded-full shadow"
                   width={933}
                   height={933}
                   alt="cover Profile Image"
-                  quality={75}
-                  priority
+                  quality={100}
                   // style={{
                   //   maxWidth: "100%",
                   //   height: "auto",
@@ -70,12 +68,12 @@ export default function Home() {
                   >
                     Software Developer{" "}
                     <Link
-                      href="linkedin.com/in/sousmiri/"
+                      href="https://www.linkedin.com/in/sousmiri/"
                       target="_blank"
                       className="hover:underline"
                       rel="noopener noreferrer"
                     >
-                      @Sou
+                      @Sousmiri
                     </Link>
                   </motion.p>
                 </div>

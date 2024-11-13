@@ -233,7 +233,6 @@ const MobileMenu = ({
               className="flex w-auto py-4 text-base font-semibold text-gray-900 capitalize border-b border-gray-300 cursor-pointer dark:border-gray-700 dark:text-gray-100"
             >
               <motion.p variants={mobileNavItemSideways}>
-                {link === "rss" ? link.toUpperCase() : link}
               </motion.p>
             </Link>
           );
