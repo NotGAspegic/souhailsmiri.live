@@ -143,7 +143,6 @@ export type GithubRepo = {
 export type PageData = {
   title: string;
   description: string;
-  image: string;
   keywords: string;
 };
 

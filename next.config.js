@@ -24,7 +24,6 @@ module.exports = withPWA({
       "activity-graph.herokuapp.com",
       "i.scdn.co", // images from spotify
       "images.unsplash.com",
-      "cdn.sanity.io", // sanity images
       "scontent.cdninstagram.com", // instagram media
     ],
   },

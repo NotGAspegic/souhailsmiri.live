@@ -2,27 +2,41 @@ import { FadeContainer, opacityVariant } from "@content/FramerMotionVariants";
 import { ILinkedinResponse } from "@lib/interface";
 
 import AnimatedDiv from "@components/FramerMotion/AnimatedDiv";
-import { IStaticPage } from "@lib/interface/sanity";
 import Image from "next/image";
-import StaticPage from "@components/StaticPage";
 import classNames from "classnames";
-import { getStaticPageFromSlug } from "@lib/sanityContent";
 import { getUserDataValue } from "@lib/supabase";
+import MetaData from "@components/MetaData";
 import { months } from "@utils/date";
-import { motion } from "framer-motion";
 import pageMeta from "@content/meta";
+import { motion } from "framer-motion";
 
 export default function About({
-  about,
-  linkedin,
+  linkedin
 }: {
-  about: IStaticPage;
   linkedin: string;
 }) {
   const parsedLinkedIn: ILinkedinResponse = JSON.parse(linkedin);
   return (
     <>
-      <StaticPage metadata={pageMeta.about} page={about} />
+      <MetaData
+        title={pageMeta.about.title}
+        description={pageMeta.about.description}
+        keywords={pageMeta.about.keywords}
+      />
+      <div className="pageTop mt-30 print:hidden">
+        <motion.h1
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={opacityVariant}
+          className="my-5 text-xl font-bold text-left md:text-3xl"
+        >
+          About me
+        </motion.h1>
+        <p>
+        Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Master's degree in Computer Science.
+        </p>
+      </div>
 
       <div className="pageTop mt-0 print:hidden">
         <motion.h3
@@ -130,30 +144,17 @@ export default function About({
           })}
         </AnimatedDiv>
       </div>
-      <div className="-mt-5 pageTop print:hidden">
-        <motion.h3
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={opacityVariant}
-          className="my-2 text-xl font-bold text-left md:text-3xl"
-        >
-          Recent watched Movies & TV Series
-        </motion.h3>
-      </div>
     </>
   );
 }
 
 export async function getStaticProps() {
-  const about = await getStaticPageFromSlug("about");
 
   const { data: linkedin } = await getUserDataValue("linkedin");
 
   return {
     props: {
-      about,
-      linkedin,
+      linkedin
     },
     revalidate: 60 * 60 * 24 , // everyday
   };

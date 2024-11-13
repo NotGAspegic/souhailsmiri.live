@@ -57,7 +57,6 @@ export default function Stats() {
       <MetaData
         title={pageMeta.stats.title}
         description={pageMeta.stats.description}
-        previewImage={pageMeta.stats.image}
         keywords={pageMeta.stats.keywords}
       />
 
