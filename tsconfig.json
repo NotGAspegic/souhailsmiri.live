@@ -52,8 +52,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/sitemap.xml.jsx"  ],
+    "**/*.tsx"],
   "exclude": [
     "node_modules"
   ]

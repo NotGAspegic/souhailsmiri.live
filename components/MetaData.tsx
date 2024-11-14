@@ -78,7 +78,7 @@ export default function MetaData({
             type: "image/jpeg",
           },
         ],
-        siteName: "prismo-sou.me",
+        siteName: "souhailsmiri.live",
       }}
       twitter={{
         handle: "@sou",
