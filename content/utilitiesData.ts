@@ -24,14 +24,14 @@ import {
     BsWindows,
     BsGithub,
   } from "react-icons/bs";
-  import { FaGitAlt, FaSearch } from "react-icons/fa";
+  import { FaGitAlt } from "react-icons/fa";
   import { Utilities } from "@lib/types";
   
   const utilities: Utilities = {
     title: "Utilities",
     description:
       "In case you are wondering What tech I use, Here's the list of what tech I'm currently using for coding on the daily basis. This list is always changing.",
-    lastUpdate: "Nov 11, 2024",
+    lastUpdate: "Nov 14, 2024",
     data: [
       {
         title: "System",
