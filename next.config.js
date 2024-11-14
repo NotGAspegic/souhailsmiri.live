@@ -17,14 +17,16 @@ module.exports = withPWA({
       "ucarecdn.com",
       "cdn.buymeacoffee.com",
       "res.cloudinary.com",
-      "imgur.com",
-      "i.imgur.com",
+      "imgur.com",//images
+      "i.imgur.com",//images
       "cutt.ly",
       "media.licdn.com",
       "activity-graph.herokuapp.com",
+      "lh3.googleusercontent.com",//images
+      "on-the-move.org",//images
       "i.scdn.co", // images from spotify
-      "images.unsplash.com",
-      "scontent.cdninstagram.com", // instagram media
+      "images.unsplash.com",//images
+      "ikarus.sg",
     ],
   },
   typescript: {

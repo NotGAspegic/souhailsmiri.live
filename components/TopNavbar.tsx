@@ -1,4 +1,3 @@
-/* Importing Modules */
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -14,13 +13,9 @@ import { navigationRoutes } from "../utils/utils";
 import Logo from "./SVG/Logo";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-/* TopNavbar Component */
+
 export default function TopNavbar() {
   const navRef = useRef<HTMLDivElement>(null);
-
-  /*  Using to control animation as I'll show the name to the mobile navbar when you scroll a bit
-   * demo: https://i.imgur.com/5LKI5DY.gif
-   */
   const control = useAnimation();
   const [navOpen, setNavOpen] = useState(false);
   const { isDarkMode, changeDarkMode } = useDarkMode();

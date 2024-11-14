@@ -14,7 +14,6 @@
 
 import { FiDownload } from "react-icons/fi";
 import Image from "next/image";
-// import InstagramSection from "@components/Instagram/InstagramSection";
 import Link from "next/link";
 import { homeProfileImage } from "@utils/utils";
 import { motion } from "framer-motion";
@@ -82,7 +81,7 @@ export default function Home() {
                   variants={opacityVariant}
                   className=" text-[#474747] dark:text-gray-300 font-medium text-sm md:text-base text-center"
                 >
-                  Turning Web Dreams into Reality, Just Like Tony Stark's Vision
+                  Turning Possibilities into Realities, Just Like Tony Stark's Vision
                 </motion.p>
               </div>
   

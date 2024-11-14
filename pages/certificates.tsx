@@ -24,7 +24,6 @@ export default function Certificates({
       <MetaData
         title={pageMeta.certificates.title}
         description={pageMeta.certificates.description}
-        previewImage={pageMeta.certificates.image}
         keywords={pageMeta.certificates.keywords}
       />
 

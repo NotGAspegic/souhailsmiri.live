@@ -20,7 +20,6 @@ export default function Utilities() {
       <MetaData
         title={pageMeta.utilities.title}
         description={utilities.description}
-        previewImage={pageMeta.utilities.image}
         keywords={pageMeta.utilities.keywords}
       />
 

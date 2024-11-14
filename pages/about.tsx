@@ -7,6 +7,7 @@ import classNames from "classnames";
 import { getUserDataValue } from "@lib/supabase";
 import MetaData from "@components/MetaData";
 import { months } from "@utils/date";
+import PageTop from "@components/PageTop";
 import pageMeta from "@content/meta";
 import { motion } from "framer-motion";
 
@@ -24,18 +25,11 @@ export default function About({
         keywords={pageMeta.about.keywords}
       />
       <div className="pageTop mt-30 print:hidden">
-        <motion.h1
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={opacityVariant}
-          className="my-5 text-xl font-bold text-left md:text-3xl"
-        >
-          About me
-        </motion.h1>
-        <p>
-        Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Master's degree in Computer Science.
-        </p>
+      <PageTop pageTitle="About me">
+          <p className="mt-5">
+          Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Master's degree in Computer Science.
+          </p>
+        </PageTop>
       </div>
 
       <div className="pageTop mt-0 print:hidden">

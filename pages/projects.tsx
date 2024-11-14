@@ -23,7 +23,6 @@ export default function Projects({
       <Metadata
         title={pageMeta.projects.title}
         description={pageMeta.projects.description}
-        previewImage={pageMeta.projects.image}
         keywords={pageMeta.projects.keywords}
       />
       <section className="pageTop">

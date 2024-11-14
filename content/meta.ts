@@ -35,7 +35,7 @@ const pageMeta: PageMeta = {
   about: {
     title: "About",
     description:
-      "Hey, I am Souhail Smiri. A Front-end Developer/React Developer from India who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Masters's degree in Computer Science.",
+      "Hey, I am Souhail Smiri. A Software Developer Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Masters's degree in Computer Science.",
     keywords: "about, about me, ",
   },
 };

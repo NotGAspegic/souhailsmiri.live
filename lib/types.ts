@@ -4,7 +4,7 @@ import React from "react";
 import { ReadTimeResults } from "reading-time";
 import { Variants } from "framer-motion";
 
-/* Custom Animated Components types */
+
 export type AnimatedTAGProps = {
   variants: Variants;
   className?: string;
@@ -12,7 +12,6 @@ export type AnimatedTAGProps = {
   infinity?: boolean;
 };
 
-/* Spotify Track  */
 export type SpotifyTrack = {
   id: number;
   title: string;
@@ -23,7 +22,6 @@ export type SpotifyTrack = {
   artist: string;
 };
 
-/* Spotify Artist  */
 export type SpotifyArtist = {
   id: number;
   name: string;
@@ -153,22 +151,4 @@ export type PageMeta = {
   certificates: PageData;
   projects: PageData;
   about: PageData;
-};
-
-export type Snippet = {
-  slug: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  image: string;
-};
-
-export type MovieType = {
-  id: number;
-  name: string;
-  image: string;
-  url: string;
-  year: number;
-  watched: boolean;
-  rating: number;
 };
