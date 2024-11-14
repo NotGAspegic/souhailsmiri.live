@@ -25,10 +25,29 @@ export default function About({
         keywords={pageMeta.about.keywords}
       />
       <div className="pageTop mt-30 print:hidden">
-      <PageTop pageTitle="About me">
-          <p className="mt-5">
-          Hey, I am Souhail Smiri. A Software Developer from Tunisia who loves to design and code. I use React.js or Next.js to build the web application interfaces and the functionalities. At the moment, I am pursuing my Master's degree in Computer Science.
-          </p>
+        <PageTop pageTitle="About me">
+          <div className="mt-5">
+            <p>Hello! I’m <strong>Souhail Smiri</strong>, a <strong>software developer</strong> from Tunisia with a primary focus on <strong>Next.js</strong> for building interactive and dynamic web applications. I graduated with a bachelor's degree in Computer Science from <strong>ISAMM, Tunisia</strong>, and I’m on a journey to specialize further in <strong>cybersecurity</strong>, aiming to pursue a master's degree in Europe to deepen my expertise in this field. Technology has fascinated me since childhood, and I've always been eager to explore and learn as much as possible.</p>
+
+            <br/>
+            
+            <p>In web development, I enjoy creating smooth, responsive interfaces and using my preferred tech stack, which includes:</p>
+            <br/>
+            <ul>
+              <li><strong>Framework</strong>: Next.js</li>
+              <li><strong>Database</strong>: Supabase</li>
+              <li><strong>CSS</strong>: TailwindCSS</li>
+            </ul>
+
+            <br/>
+
+            <p>While I enjoy web development, my true passion lies in <strong>game development</strong> with <strong>Unity</strong>. As a dedicated gamer, I’ve spent countless hours playing immersive single-player games like <strong>Elden Ring</strong> and competing in multiplayer games like <strong>Valorant</strong>. Game development combines creativity and logic in a way that resonates deeply with me, allowing me to bring my love for gaming into my coding projects.</p>
+            <br/>
+            
+            <p>Beyond games, I’m actively engaged in <strong>cybersecurity</strong> and enjoy the challenges of <strong>CTF</strong> (Capture The Flag) exercises. I’m continuously expanding my knowledge in this field, aiming to build a solid foundation for a future career in cybersecurity.</p>
+            <br/>
+            <p>I love my work and take great enjoyment (and sometimes frustration!) in every project I take on. Feel free to explore my portfolio, and if you have any questions or are interested in collaborating, don’t hesitate to reach out to me on <a href="https://www.linkedin.com/in/souhail-smiri" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a> or via email at <a href="mailto:souhail.smiriaa@gmail.com"><u>souhail.smiriaa@gmail.com</u></a>.</p>
+          </div>
         </PageTop>
       </div>
 

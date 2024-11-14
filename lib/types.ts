@@ -1,7 +1,5 @@
 import { IconType } from "react-icons/lib";
-import { MDXRemoteSerializeResult } from "next-mdx-remote";
 import React from "react";
-import { ReadTimeResults } from "reading-time";
 import { Variants } from "framer-motion";
 
 
@@ -81,34 +79,12 @@ export type Utilities = {
   data: UtilityType[];
 };
 
-export type FrontMatter = {
-  slug: string;
-  readingTime: ReadTimeResults;
-  excerpt: string;
-  title: string;
-  date: string;
-  keywords: string;
-  image: string;
-  org?: string | null;
-};
-
-export type PostType = {
-  meta: FrontMatter;
-  source: MDXRemoteSerializeResult;
-  tableOfContents: TableOfContents[];
-};
-
 export type TableOfContents = {
   level: number;
   id: string;
   heading: string;
 };
 
-export type SupportMe = {
-  name: string;
-  url: string;
-  Icon: IconType;
-};
 
 export type Song = {
   album: string;

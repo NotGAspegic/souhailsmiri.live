@@ -13,7 +13,7 @@ import { navigationRoutes } from "../utils/utils";
 import Logo from "./SVG/Logo";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
-
+/* TopNavbar Component */
 export default function TopNavbar() {
   const navRef = useRef<HTMLDivElement>(null);
   const control = useAnimation();
@@ -79,7 +79,7 @@ export default function TopNavbar() {
       </AnimatePresence>
 
       <Link href="/" className="mr-3" aria-label="Link to Home Page">
-        <Logo className="relative hidden w-10 h-10 sm:inline-flex" />
+        <Logo className="relative hidden w-8 h-8 sm:inline-flex" />
         <div className="w-full sm:!hidden">
           <motion.p
             initial="hidden"
@@ -228,6 +228,7 @@ const MobileMenu = ({
               className="flex w-auto py-4 text-base font-semibold text-gray-900 capitalize border-b border-gray-300 cursor-pointer dark:border-gray-700 dark:text-gray-100"
             >
               <motion.p variants={mobileNavItemSideways}>
+                {link === "rss" ? link.toUpperCase() : link}
               </motion.p>
             </Link>
           );

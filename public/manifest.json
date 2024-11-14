@@ -5,8 +5,8 @@
     "scope": "/",
     "start_url": "/",
     "name": "Souhail Smiri",
-    "short_name": "Souhail Smiri",
-    "description": "I am currently perusing my Masters Degree in Computer Science. I can code in Python, C, C++, etc. I also work on React & Next.js. This is my portfolio.",
+    "short_name": "Sou",
+    "description": "I am currently perusing my Masters Degree in Computer Science. This is my portfolio.",
     "icons": [
       {
         "src": "icons/icon-16x16.png",
