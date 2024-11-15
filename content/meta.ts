@@ -4,7 +4,7 @@ const pageMeta: PageMeta = {
   home: {
     title: "",
     description:
-      "Hey, I am Souhail Smiri. A Software Developer Developer from Tunisia who loves code.At the moment, I am pursuing my Masters's degree in Computer Science.",
+      "Hey, I am Souhail Smiri. A Software Developer Developer from Tunisia who loves code.",
     keywords: "portfolio Souhail, portfolio NotGAspegic",
   },
 
@@ -35,7 +35,7 @@ const pageMeta: PageMeta = {
   about: {
     title: "About",
     description:
-      "Hey, I am Souhail Smiri. A Software Developer Developer from Tunisia who loves code.At the moment, I am pursuing my Masters's degree in Computer Science.",
+      "Hey, I am Souhail Smiri. A Software Developer Developer from Tunisia who loves code.",
     keywords: "about, about me, ",
   },
 };
