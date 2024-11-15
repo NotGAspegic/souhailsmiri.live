@@ -7,6 +7,7 @@ import "nprogress/nprogress.css";
 import { DarkModeProvider } from "@context/darkModeContext";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { AppProps } from "next/app";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 NProgress.configure({
   easing: "ease",
@@ -41,6 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <GoogleAnalytics strategy="lazyOnload" />
         )}
         <Component {...pageProps} />
+        <SpeedInsights />
       </Layout>
     </DarkModeProvider>
   );
