@@ -86,7 +86,7 @@ export default function Home() {
               </div>
   
               <Link
-                href="http://bit.ly/3ArkdKz"
+                href="/CVEN.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2 transition-transform border border-gray-500 rounded-md outline-none select-none dark:border-gray-400 hover:bg-white dark:hover:bg-neutral-800 active:scale-95"
