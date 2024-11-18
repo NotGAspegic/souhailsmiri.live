@@ -2,10 +2,10 @@
 
 ![Cover](https://i.imgur.com/4uapWvo.png)
 
-![Github stars](https://img.shields.io/github/stars/j471n/j471n.in?style=flat-square)
-![Github Forks](https://img.shields.io/github/forks/j471n/j471n.in?style=flat-square)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/j471n/j471n.in?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/j471n/j471n.in?style=flat-square)
+![Github stars](https://img.shields.io/github/stars/NotGAspegic/souhailsmiri.live?style=flat-square)
+![Github Forks](https://img.shields.io/github/forks/NotGAspegic/souhailsmiri.live?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/NotGAspegic/souhailsmiri.live?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/NotGAspegic/souhailsmiri.live?style=flat-square)
 
 </div>
 
