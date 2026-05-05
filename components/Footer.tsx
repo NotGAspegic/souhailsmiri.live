@@ -12,7 +12,6 @@ import { SiSpotify } from "react-icons/si";
 import useSWR from "swr";
 import fetcher from "../lib/fetcher";
 import { HiOutlineQrcode } from "react-icons/hi";
-import { BsDot } from "react-icons/bs";
 import { Song } from "@lib/types";
 
 export default function Footer({
@@ -23,7 +22,6 @@ export default function Footer({
   showQR: boolean;
 }) {
   const { data: currentSong } = useSWR("/api/now-playing", fetcher);
-  const { data: visitors } = useSWR("/api/ga", fetcher);
 
   return (
     <footer className="w-screen text-gray-600 dark:text-gray-400/50 font-inter mb-14 print:hidden">
@@ -80,15 +78,7 @@ export default function Footer({
           variants={opacityVariant}
           className="flex items-center justify-between w-full gap-4 mt-5 "
         >
-          <div className="relative flex items-center px-4 py-1 text-xs bg-white rounded-full shadow dark:bg-darkSecondary sm:text-sm">
-            <BsDot className="-ml-2 text-green-500 w-7 h-7 animate-ping" />
-            <div className="flex items-center gap-1">
-              {visitors?.totalVisitors ?? (
-                <div className="w-10 h-3 bg-gray-300 rounded-full dark:bg-darkPrimary animate-pulse"></div>
-              )}{" "}
-              visitors in last {visitors?.days} days
-            </div>
-          </div>
+          <div></div>
           <div
             onClick={() => setShowQR(!showQR)}
             className="p-3 text-white transition-all bg-gray-700 rounded-full cursor-pointer active:scale-90 hover:scale-105"

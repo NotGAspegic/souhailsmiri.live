@@ -46,6 +46,8 @@ export default function Home() {
                   height={933}
                   alt="cover Profile Image"
                   quality={100}
+                  loading="eager"
+                  priority
                   // style={{
                   //   maxWidth: "100%",
                   //   height: "auto",

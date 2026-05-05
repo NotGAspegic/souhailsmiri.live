@@ -1,12 +1,12 @@
 import { IconType } from "react-icons/lib";
-import React from "react";
+import { ReactElement, ReactNode } from "react";
 import { Variants } from "framer-motion";
 
 
 export type AnimatedTAGProps = {
   variants: Variants;
   className?: string;
-  children: React.ReactNode;
+  children: ReactNode;
   infinity?: boolean;
 };
 
@@ -67,7 +67,7 @@ export type UtilityType = {
   data: {
     name: string;
     description: string;
-    Icon: IconType | JSX.Element;
+    Icon: IconType | ReactElement;
     link: string;
   }[];
 };

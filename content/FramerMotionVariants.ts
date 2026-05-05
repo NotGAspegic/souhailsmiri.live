@@ -127,7 +127,7 @@ export const searchBarSlideAnimation: Variants = {
     width: "100%",
     opacity: 1,
     transition: {
-      type: "linear",
+      ease: "linear",
       duration: 1,
     },
   },

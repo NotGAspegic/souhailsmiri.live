@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
@@ -11,7 +11,7 @@ import {
 import { useDarkMode } from "../context/darkModeContext";
 import { navigationRoutes } from "../utils/utils";
 import Logo from "./SVG/Logo";
-import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { BsMoonStars, BsSun } from "react-icons/bs";
 
 /* TopNavbar Component */
 export default function TopNavbar() {
@@ -115,13 +115,16 @@ export default function TopNavbar() {
         animate="visible"
         variants={popUp}
         className="cursor-pointer"
-        title="Toggle Theme"
       >
-        <DarkModeSwitch
-          checked={isDarkMode}
-          onChange={changeDarkMode}
-          size={24}
-        />
+        <button
+          type="button"
+          onClick={() => changeDarkMode(!isDarkMode)}
+          title="Toggle Theme"
+          aria-label="Toggle Theme"
+          className="grid w-8 h-8 place-items-center rounded-md text-gray-700 transition-colors hover:bg-black/10 dark:text-gray-200 dark:hover:bg-neutral-700/50"
+        >
+          {isDarkMode ? <BsSun className="w-5 h-5" /> : <BsMoonStars className="w-5 h-5" />}
+        </button>
       </motion.div>
     </div>
   );

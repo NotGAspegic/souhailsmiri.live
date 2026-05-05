@@ -17,6 +17,9 @@ export default function About({
   linkedin: string;
 }) {
   const parsedLinkedIn: ILinkedinResponse = JSON.parse(linkedin);
+  const isUnoptimizedLogo = (src: string) =>
+    src.includes("placehold.co") || src.endsWith(".svg");
+
   return (
     <>
       <MetaData
@@ -79,6 +82,7 @@ export default function About({
                     height={400}
                     className="object-cover"
                     alt={experience.company}
+                    unoptimized={isUnoptimizedLogo(experience.logo_url)}
                   />
                 </div>
 

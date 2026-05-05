@@ -1,0 +1,203 @@
+// portfolio_recovered_data.jsonc
+// Recovered public data from Souhail Smiri portfolio website.
+// File type: JSONC = JSON with comments.
+// Important: Supabase/Postgres cannot import comments directly as JSON.
+// To import this as JSON, remove all lines starting with // first.
+//
+// Suggested structure:
+// - projects: data for your Projects page/table
+// - certificates: data for your Certificates page/table
+// - about_page: text content for your About page
+// - experiences: work/internship experience cards from the About page
+//
+// Suggested Supabase tables:
+// - projects(title, description, technologies, image_url, created_at)
+// - certificates(title, issuer, date, certificate_url, image_url, created_at)
+// - about_page(title, body, preferred_stack, created_at)
+// - experiences(role, company, location, start_date, end_date, description, created_at)
+
+{
+  // =========================
+  // PROJECTS
+  // =========================
+  // These are the visible project cards from the /projects page.
+  // "technologies" is an array, good for a Supabase text[] column or JSONB column.
+  "projects": [
+    {
+      "title": "Prismo",
+      "description": "This is my portfolio built with Next.js, Tailwind CSS, Spotify API, Supabase and Vercel.",
+      "technologies": ["Next.js", "Tailwind CSS", "Spotify API", "Supabase", "Vercel"],
+      "image_url": "https://i.imgur.com/4uapWvo.png"
+    },
+    {
+      "title": "Deadly Stuff",
+      "description": "Designed and developed \"Deadly Stuff,\" a 2D pixel art hack and slash game in Unity, demonstrating proficiency in game development, C# programming, and engaging gameplay mechanics.",
+      "technologies": ["Unity", "C#", "Aseprite", "Animation"],
+      "image_url": "https://i.imgur.com/pCOlIDf.png"
+    },
+    {
+      "title": "Raspberry Pi Cluster",
+      "description": "Designed and developed a Raspberry Pi Cluster, making use of Kubernetes for container orchestration.",
+      "technologies": ["Linux", "Kubernetes", "Raspberry Pi", "Networking", "Python"],
+      "image_url": "https://ikarus.sg/content/images/2020/07/rpi-plus-kubernetes-2.png"
+    },
+    {
+      "title": "Cyberlab",
+      "description": "Creation of \"CyberLab,\" a home lab environment for cybersecurity, using Kali Linux and various security tools. Designed to test and practice techniques for protecting against cyberattacks in real-world scenarios.",
+      "technologies": ["Kali Linux", "Networking", "Virtualization", "Cybersecurity"],
+      "image_url": "https://i.imgur.com/Dzk5XG6.png"
+    },
+    {
+      "title": "SecureChat",
+      "description": "Development of \"SecureChat,\" a real-time secure chat application. Implemented end-to-end encryption to ensure the confidentiality of messages exchanged between users.",
+      "technologies": ["Python", "Socket Programming", "Cryptography"],
+      "image_url": "https://i.imgur.com/VipM9iv.png"
+    },
+    {
+      "title": "Educateck",
+      "description": "Collaborated on \"Educateck,\" an IoT-based smart high school system with environmental monitoring and a parking management solution, integrating Firebase for secure data sharing.",
+      "technologies": ["Java", "Android Studio", "IoT", "Arduino", "Raspberry Pi"],
+      "image_url": "https://i.imgur.com/q8I0XeZ.png"
+    },
+    {
+      "title": "MyWeather",
+      "description": "Created \"MyWeather,\" an Android weather app with a sleek design and open-sourced it on GitHub for community collaboration.",
+      "technologies": ["Java", "Android Studio"],
+      "image_url": "https://i.imgur.com/7QbcQnZ.png"
+    },
+    {
+      "title": "Alfayn",
+      "description": "Created an improved Google Docs that manages millions of collaborators in real-time.",
+      "technologies": ["Javascript", "Next.js", "React", "Liveblocks", "Clerk", "Tailwind CSS"],
+      "image_url": "https://i.imgur.com/aDgeeAZ.png"
+    }
+  ],
+
+  // =========================
+  // CERTIFICATES
+  // =========================
+  // These are the visible certificate cards from the /certificates page.
+  // "date" is stored in ISO format YYYY-MM-DD, which works well with Supabase date columns.
+  // "display_date" is only for UI display if you want to preserve the exact website format.
+  "certificates": [
+    {
+      "title": "Github Foundations",
+      "issuer": "Datacamp",
+      "date": "2025-01-29",
+      "display_date": "Jan 29, 2025",
+      "certificate_url": "https://drive.google.com/file/d/1sEADyipuhbMzig8UfV8SeNqET33hGGHY/view?usp=sharing",
+      "image_url": "https://i.imgur.com/8bLVpG5.png"
+    },
+    {
+      "title": "Introduction to Cybersecurity Awareness",
+      "issuer": "HP life",
+      "date": "2024-12-18",
+      "display_date": "Dec 18, 2024",
+      "certificate_url": "https://drive.google.com/file/d/1REEBhtMAxeqsdSB50JZCI-CR_rsQKhQe/view?usp=sharing",
+      "image_url": "https://i.imgur.com/d1Vcm7x.png"
+    },
+    {
+      "title": "Microsoft Azure Fundamentals (AZ-900)",
+      "issuer": "Datacamp",
+      "date": "2024-12-14",
+      "display_date": "Dec 14, 2024",
+      "certificate_url": "https://drive.google.com/file/d/1sopbX_bthvkDl7C4W6ho9O5tzoo7aGe_/view?usp=sharing",
+      "image_url": "https://i.imgur.com/8bLVpG5.png"
+    },
+    {
+      "title": "Career Essentials in Cybersecurity by Microsoft and LinkedIn",
+      "issuer": "LinkedIn",
+      "date": "2024-11-03",
+      "display_date": "Nov 3, 2024",
+      "certificate_url": "https://drive.google.com/file/d/1y75KEjH3Mr_u7m-ZGdxZ9v0rOpl4MpuQ/view?usp=drive_link",
+      "image_url": "https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+    },
+    {
+      "title": "Cybersecurity Foundations",
+      "issuer": "LinkedIn",
+      "date": "2024-10-22",
+      "display_date": "Oct 22, 2024",
+      "certificate_url": "https://drive.google.com/file/d/1mZshgNKvjNlSCGhatY1vn6JjQ-PL6tpL/view?usp=sharing",
+      "image_url": "https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg"
+    },
+    {
+      "title": "IELTS Academic 7.0 (C1 Advanced)",
+      "issuer": "British Council",
+      "date": "2023-03-22",
+      "display_date": "Mar 22, 2023",
+      "certificate_url": "https://drive.google.com/file/d/181t1ZwzZBoXfbrnVm95vkiTCGkLSRw8A/view?usp=sharing",
+      "image_url": "https://on-the-move.org/sites/default/files/news/2022-10/BRITISH-COUNCIL_logo.png"
+    },
+    {
+      "title": "EF SET English Certificate 66/100 (C1 Advanced)",
+      "issuer": "EF SET",
+      "date": "2023-05-06",
+      "display_date": "May 6, 2023",
+      "certificate_url": "https://cert.efset.org/xY8uM5",
+      "image_url": "https://cert.efset.org/_next/static/media/logo.06bf8183.svg"
+    },
+    {
+      "title": "Fundamentals of Digital Marketing",
+      "issuer": "Google",
+      "date": "2023-08-05",
+      "display_date": "Aug 5, 2023",
+      "certificate_url": "https://drive.google.com/file/d/1hpeBxB1rkwLOxP_FvMiTDn2YJvHVbfxw/view",
+      "image_url": "https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA"
+    }
+  ],
+
+  // =========================
+  // ABOUT PAGE
+  // =========================
+  // This is the main text content from the /about page.
+  // You can store "body" as JSONB, text[], or one long text string.
+  "about_page": {
+    "title": "About me",
+    "body": [
+      "Hello! I’m Souhail Smiri, a software developer from Tunisia with a primary focus on Next.js for building interactive and dynamic web applications. I graduated with a bachelor's degree in Computer Science from ISAMM, Tunisia, and I’m on a journey to specialize further in cybersecurity, aiming to pursue a master's degree in Europe to deepen my expertise in this field. Technology has fascinated me since childhood, and I've always been eager to explore and learn as much as possible.",
+      "In web development, I enjoy creating smooth, responsive interfaces and using my preferred tech stack, which includes: Framework: Next.js, Database: Supabase, CSS: TailwindCSS.",
+      "While I enjoy web development, my true passion lies in game development with Unity. As a dedicated gamer, I’ve spent countless hours playing immersive single-player games like Elden Ring and competing in multiplayer games like Valorant. Game development combines creativity and logic in a way that resonates deeply with me, allowing me to bring my love for gaming into my coding projects.",
+      "Beyond games, I’m actively engaged in cybersecurity and enjoy the challenges of CTF (Capture The Flag) exercises. I’m continuously expanding my knowledge in this field, aiming to build a solid foundation for a future career in cybersecurity.",
+      "I love my work and take great enjoyment (and sometimes frustration!) in every project I take on. Feel free to explore my portfolio, and if you have any questions or are interested in collaborating, don’t hesitate to reach out to me on LinkedIn or via email at souhail.smiriaa@gmail.com."
+    ],
+    "preferred_stack": {
+      "framework": "Next.js",
+      "database": "Supabase",
+      "css": "TailwindCSS"
+    }
+  },
+
+  // =========================
+  // EXPERIENCE
+  // =========================
+  // These are experience cards from the /about page.
+  // "description" is an array of bullet points.
+  "experiences": [
+    {
+      "role": "Embedded Systems Intern",
+      "company": "Quebec Training Center",
+      "location": "Manouba, Tunisia",
+      "start_date": "2024-02",
+      "end_date": "2024-05",
+      "display_date": "Feb 2024 - May 2024",
+      "description": [
+        "Developed a Raspberry Pi cluster using Kubernetes, focusing on the design and implementation of a scalable, distributed computing environment.",
+        "Configured and managed Kubernetes for container orchestration, ensuring efficient deployment and operation of applications across the cluster.",
+        "Implemented networking and load balancing solutions to optimize communication and resource distribution among nodes."
+      ]
+    },
+    {
+      "role": "Full-stack Developer",
+      "company": "Nexters",
+      "location": "Tunis, Tunisia",
+      "start_date": "2023-06",
+      "end_date": "2023-08",
+      "display_date": "Jun 2023 - Aug 2023",
+      "description": [
+        "Assisted in the development of a Customer Relationship Management (CRM) system, encompassing both front-end and back-end components, using the MERN stack: MongoDB, Express.js, React, Node.js.",
+        "Implemented RESTful APIs, enhancing the system's ability to retrieve and manipulate customer information.",
+        "Participated in debugging, troubleshooting, and testing to improve the system's overall performance and reliability."
+      ]
+    }
+  ]
+}

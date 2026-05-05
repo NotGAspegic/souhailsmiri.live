@@ -6,23 +6,28 @@ import {
     CartesianGrid,
     ResponsiveContainer,
     Tooltip,
-    TooltipProps,
     XAxis,
     YAxis,
   } from "recharts";
-  import {
-    NameType,
-    ValueType,
-  } from "recharts/types/component/DefaultTooltipContent";
   
   import AnimatedHeading from "./FramerMotion/AnimatedHeading";
   import AnimatedText from "./FramerMotion/AnimatedText";
-  import React from "react";
   import fetcher from "@lib/fetcher";
   import { getFormattedDate } from "@utils/date";
   import { opacityVariant } from "@content/FramerMotionVariants";
   import { useDarkMode } from "@context/darkModeContext";
   import useSWR from "swr";
+
+  type ChartTooltipProps = {
+    active?: boolean;
+    payload?: Array<{
+      value?: number | string;
+      payload: {
+        date?: string;
+        day?: string;
+      };
+    }>;
+  };
   
   export default function GitHubActivityGraph() {
     const { isDarkMode } = useDarkMode();
@@ -137,13 +142,15 @@ import {
   const ContributionsToolTip = ({
     active,
     payload,
-  }: TooltipProps<ValueType, NameType>) => {
-    if (active && payload && payload.length) {
+  }: ChartTooltipProps) => {
+    const date = payload?.[0]?.payload.date;
+
+    if (active && payload && payload.length && date) {
       return (
         <div className="p-5 rounded-md bg-white dark:bg-darkSecondary text-black dark:text-gray-200 text-sm max-w-[250px] w-fit shadow-lg">
           <p className="label">
             <span className="font-medium">Date :</span>{" "}
-            {getFormattedDate(new Date(payload[0].payload.date))}
+            {getFormattedDate(new Date(date))}
           </p>
           <p className="desc">
             <span className="font-medium">Commit Count :</span> {payload[0].value}
@@ -158,7 +165,7 @@ import {
   const ContributionCountByDayOfWeekToolTip = ({
     active,
     payload,
-  }: TooltipProps<ValueType, NameType>) => {
+  }: ChartTooltipProps) => {
     if (active && payload && payload.length) {
       return (
         <div className="p-5 rounded-md bg-white dark:bg-darkSecondary text-black dark:text-gray-200 text-sm max-w-[250px] w-fit shadow-lg">

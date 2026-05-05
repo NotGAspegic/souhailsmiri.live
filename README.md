@@ -19,7 +19,6 @@
 - **Deployment**: [Vercel](https://vercel.com)
 - **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
 - **Plugins**: [rehype](https://github.com/rehypejs/rehype)
-- **Analytics**: [Google Analytics](https://analytics.google.com/analytics/web/)
 - [SWR](https://swr.vercel.app/)
 - [Email.js](https://www.emailjs.com/)
 - [React Toastify](https://github.com/fkhadra/react-toastify)

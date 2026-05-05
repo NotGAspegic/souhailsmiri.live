@@ -1,4 +1,3 @@
-import React from "react";
 import Project from "@components/Project";
 import Metadata from "@components/MetaData";
 import PageTop from "@components/PageTop";

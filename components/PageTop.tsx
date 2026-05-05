@@ -3,7 +3,7 @@ import {
     opacityVariant,
   } from "../content/FramerMotionVariants";
   import AnimatedHeading from "./FramerMotion/AnimatedHeading";
-  import AnimatedText from "./FramerMotion/AnimatedText";
+  import AnimatedDiv from "./FramerMotion/AnimatedDiv";
   
   export default function PageTop({
     pageTitle,
@@ -26,12 +26,12 @@ import {
         >
           {pageTitle}
         </AnimatedHeading>
-        <AnimatedText
+        <AnimatedDiv
           variants={opacityVariant}
           className="text-lg text-gray-600 dark:text-gray-400"
         >
           {children}
-        </AnimatedText>
+        </AnimatedDiv>
       </div>
     );
   }

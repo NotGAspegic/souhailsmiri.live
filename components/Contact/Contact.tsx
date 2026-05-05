@@ -1,4 +1,3 @@
-import React from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { popUpFromBottomForText } from "../../content/FramerMotionVariants";
 import AnimatedText from "../FramerMotion/AnimatedText";

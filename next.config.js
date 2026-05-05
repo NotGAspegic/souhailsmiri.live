@@ -2,34 +2,55 @@
  * @type {import('next').NextConfig}
  */
 
-const withPWA = require("next-pwa")({
-  dest: "public",
-  register: true,
-  skipWaiting: true,
-  disable: process.env.NODE_ENV === "development",
-  publicExcludes: ["!CVCYB.pdf"],
-});
-
-module.exports = withPWA({
+module.exports = {
   reactStrictMode: true,
   images: {
-    domains: [
-      "ucarecdn.com",
-      "cdn.buymeacoffee.com",
-      "res.cloudinary.com",
-      "imgur.com",//images
-      "i.imgur.com",//images
-      "cutt.ly",
-      "media.licdn.com",
-      "activity-graph.herokuapp.com",
-      "lh3.googleusercontent.com",//images
-      "on-the-move.org",//images
-      "i.scdn.co", // images from spotify
-      "images.unsplash.com",//images
-      "ikarus.sg",
+    qualities: [75, 100],
+    remotePatterns: [
+      { protocol: "https", hostname: "ucarecdn.com" },
+      { protocol: "https", hostname: "cdn.buymeacoffee.com" },
+      { protocol: "https", hostname: "res.cloudinary.com" },
+      { protocol: "https", hostname: "imgur.com" },
+      { protocol: "https", hostname: "i.imgur.com" },
+      { protocol: "https", hostname: "cutt.ly" },
+      { protocol: "https", hostname: "media.licdn.com" },
+      { protocol: "https", hostname: "activity-graph.herokuapp.com" },
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
+      { protocol: "https", hostname: "content.linkedin.com" },
+      { protocol: "https", hostname: "cert.efset.org" },
+      { protocol: "https", hostname: "placehold.co" },
+      { protocol: "https", hostname: "on-the-move.org" },
+      { protocol: "https", hostname: "i.scdn.co" },
+      { protocol: "https", hostname: "images.unsplash.com" },
+      { protocol: "https", hostname: "ikarus.sg" },
     ],
   },
   typescript: {
     ignoreBuildErrors: false,
   },
-});
+  webpack: (config) => {
+    const existingIgnored = config.watchOptions?.ignored;
+    const ignored = Array.isArray(existingIgnored)
+      ? existingIgnored.filter((pattern) => typeof pattern === "string" && pattern.length > 0)
+      : typeof existingIgnored === "string" && existingIgnored.length > 0
+        ? [existingIgnored]
+        : [];
+
+    config.watchOptions = {
+      ...config.watchOptions,
+      ignored: [
+        ...ignored,
+        "**/DumpStack.log.tmp",
+        "**/hiberfil.sys",
+        "**/pagefile.sys",
+        "**/swapfile.sys",
+        "C:/DumpStack.log.tmp",
+        "C:/hiberfil.sys",
+        "C:/pagefile.sys",
+        "C:/swapfile.sys",
+      ],
+    };
+
+    return config;
+  },
+};
