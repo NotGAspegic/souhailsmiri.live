@@ -2,46 +2,113 @@
 
 ![Cover](https://i.imgur.com/4uapWvo.png)
 
-![Github stars](https://img.shields.io/github/stars/NotGAspegic/souhailsmiri.live?style=flat-square)
-![Github Forks](https://img.shields.io/github/forks/NotGAspegic/souhailsmiri.live?style=flat-square)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/NotGAspegic/souhailsmiri.live?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/NotGAspegic/souhailsmiri.live?style=flat-square)
+# Souhail Smiri Portfolio
+
+Personal portfolio built with Next.js, Tailwind CSS, Supabase, Spotify API, EmailJS, and Vercel.
 
 </div>
 
-## Tools Used
+## Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
+- **Framework**: [Next.js](https://nextjs.org/) 16
+- **UI**: [React](https://react.dev/) 19
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Database**: [Supabase](https://supabase.com/)
-
-- **Animations**: [Framer Motion](https://framer.com/motion)
-- **Deployment**: [Vercel](https://vercel.com)
-- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
-- **Plugins**: [rehype](https://github.com/rehypejs/rehype)
-- [SWR](https://swr.vercel.app/)
-- [Email.js](https://www.emailjs.com/)
-- [React Toastify](https://github.com/fkhadra/react-toastify)
-
-
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Data fetching**: [SWR](https://swr.vercel.app/)
+- **Contact form**: [EmailJS](https://www.emailjs.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm ci
+```
+
+Create your local environment file:
+
+```bash
+cp .env.example .env.local
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
+## Environment Variables
 
-## Setting up the Environment
+Use `.env.example` as the template.
 
-Rename [`.env.example`](/.env.example) to `.env.local` and then you need to populate that with the respective values.
+Required for Supabase-backed pages:
+
+```env
+SUPABASE_URL=
+SUPABASE_KEY=
+```
+
+Optional features:
+
+```env
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+SPOTIFY_REFRESH_TOKEN=
+
+GITHUB_TOKEN=
+
+NEXT_PUBLIC_YOUR_SERVICE_ID=
+NEXT_PUBLIC_YOUR_TEMPLATE_ID=
+NEXT_PUBLIC_YOUR_USER_ID=
+
+REVALIDATE_SECRET=
+EMAIL_VALIDATION_API=
+```
+
+## Supabase Restore
+
+If the Supabase project is new, run the SQL in:
+
+```txt
+supabase_restore.sql
+```
+
+It creates and seeds the tables used by the app:
+
+```txt
+projects
+certificates
+user_data
+```
+
+## Scripts
+
+```bash
+npm run dev      # start local development
+npm run build    # production build
+npm run start    # run production server after build
+npm run tsc      # typecheck
+```
+
+The project uses Webpack explicitly for Next.js builds:
+
+```json
+"dev": "next dev --webpack",
+"build": "next build --webpack"
+```
+
+## Deployment
+
+Deploy on Vercel and add the same environment variables from `.env.example` in the Vercel project settings.
+
+Before deploying, verify locally:
+
+```bash
+npm run tsc
+npm run build
+npm audit --omit=dev
+```

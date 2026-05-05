@@ -18,7 +18,7 @@ export async function getProjects() {
     .order("created_at", { ascending: false });
 
   return {
-    projects,
+    projects: projects ?? [],
     error: error !== null,
   };
 }
@@ -35,7 +35,7 @@ export async function getCertificates() {
     .order("created_at", { ascending: false });
 
   return {
-    certificates,
+    certificates: certificates ?? [],
     error: error !== null,
   };
 }
@@ -52,15 +52,16 @@ export async function getUserDataValue(key: string) {
     .limit(1)
     .order("created_at", { ascending: false });
 
-  if (data?.length === 0) {
+  if (error || !data?.[0]?.value) {
     return {
       data: null,
-      error: null,
+      error: error !== null,
     };
   }
+
   return {
-    data: data![0].value,
-    error: error !== null,
+    data: data[0].value,
+    error: false,
   };
 }
 
@@ -71,14 +72,15 @@ export async function setUserDataValue(key: string, value1: any) {
     .eq("key", key)
     .select();
 
-  if (data?.length === 0) {
+  if (error || !data?.[0]?.value) {
     return {
       data: null,
-      error: null,
+      error: error !== null,
     };
   }
+
   return {
-    data: data![0].value,
-    error: error !== null,
+    data: data[0].value,
+    error: false,
   };
 }

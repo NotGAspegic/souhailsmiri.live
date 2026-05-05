@@ -1,5 +1,5 @@
 import { FadeContainer, opacityVariant } from "@content/FramerMotionVariants";
-import { ILinkedinResponse } from "@lib/interface";
+import { ILinkedInExperience, ILinkedinResponse } from "@lib/interface";
 
 import AnimatedDiv from "@components/FramerMotion/AnimatedDiv";
 import Image from "next/image";
@@ -11,14 +11,23 @@ import PageTop from "@components/PageTop";
 import pageMeta from "@content/meta";
 import { motion } from "framer-motion";
 
+type AboutLinkedInData = Pick<ILinkedinResponse, "experiences">;
+
+const fallbackLinkedIn: AboutLinkedInData = {
+  experiences: [],
+};
+
 export default function About({
   linkedin
 }: {
-  linkedin: string;
+  linkedin: string | null;
 }) {
-  const parsedLinkedIn: ILinkedinResponse = JSON.parse(linkedin);
+  const parsedLinkedIn: AboutLinkedInData = linkedin
+    ? JSON.parse(linkedin)
+    : fallbackLinkedIn;
   const isUnoptimizedLogo = (src: string) =>
     src.includes("placehold.co") || src.endsWith(".svg");
+  const experiences: ILinkedInExperience[] = parsedLinkedIn.experiences ?? [];
 
   return (
     <>
@@ -69,7 +78,7 @@ export default function About({
           variants={FadeContainer}
           className="flex flex-col gap-2 pt-10 pb-5 overflow-x-scroll md:gap-4"
         >
-          {parsedLinkedIn.experiences.map((experience) => {
+          {experiences.map((experience) => {
             return (
               <div
                 key={experience.company_linkedin_profile_url}
@@ -171,7 +180,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      linkedin
+      linkedin: linkedin ?? null
     },
     revalidate: 60 * 60 * 24 , // everyday
   };
