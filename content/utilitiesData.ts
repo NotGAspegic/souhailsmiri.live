@@ -11,7 +11,6 @@ import {
   SiPython,
   SiTensorflow,
   SiOpencv,
-  SiGithub,
   SiLinux,
   SiKubernetes,
   SiAnaconda,
@@ -19,12 +18,9 @@ import {
   SiPytorch,
   SiArduino,
   SiRaspberrypi,
-  SiGit,
-  SiWindows,
 } from "react-icons/si";
 
 import {
-  BsFillTerminalFill,
   BsGithub,
   BsWindows,
 } from "react-icons/bs";
