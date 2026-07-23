@@ -39,26 +39,101 @@ export default function About({
       <div className="pageTop mt-30 print:hidden">
         <PageTop pageTitle="About me">
           <div className="mt-5">
-            <p>Hello! I’m <strong>Souhail Smiri</strong>, a <strong>software developer</strong> from Tunisia with a primary focus on <strong>Next.js</strong> for building interactive and dynamic web applications. I graduated with a bachelor's degree in Computer Science from <strong>ISAMM, Tunisia</strong>, and I’m on a journey to specialize further in <strong>cybersecurity</strong>, aiming to pursue a master's degree in Europe to deepen my expertise in this field. Technology has fascinated me since childhood, and I've always been eager to explore and learn as much as possible.</p>
+            <p> Hello! I'm <strong>Souhail Smiri</strong>, a{" "}
+              <strong>Master's student in Computer Engineering for Intelligent Systems</strong>{" "}
+              at the <strong>University of Verona</strong>, originally from Tunisia.
+              I'm passionate about building intelligent software that combines{" "}
+              <strong>Artificial Intelligence</strong>,{" "}
+              <strong>Computer Vision</strong>,{" "}
+              <strong>Machine Learning</strong>, and{" "}
+              <strong>Embedded Systems</strong> to solve real-world problems.
+            </p>
 
-            <br/>
-            
-            <p>In web development, I enjoy creating smooth, responsive interfaces and using my preferred tech stack, which includes:</p>
-            <br/>
+            <br />
+
+            <p>
+              I graduated with a Bachelor's degree in{" "}
+              <strong>Computer Science (Internet of Things specialization)</strong>{" "}
+              from <strong>ISAMM, Tunisia</strong>, where I developed a solid
+              foundation in software engineering, IoT, networking, and distributed
+              systems. During my master's studies, my interests have shifted toward
+              AI-driven applications, particularly computer vision, deep learning,
+              edge computing, and intelligent automation.
+            </p>
+
+            <br />
+
+            <p>
+              Recently, I've been working on projects involving{" "}
+              <strong>OpenCV</strong>, <strong>MediaPipe</strong>,{" "}
+              <strong>TensorFlow Lite</strong>, machine learning, and data analytics.
+              I enjoy building real-time AI applications, from hand tracking systems
+              and embedded AI solutions to analytics platforms powered by machine
+              learning.
+            </p>
+
+            <br />
+
+            <p>
+              Alongside AI, I have a strong software engineering background and enjoy
+              developing modern applications using technologies such as:
+            </p>
+
+            <br />
+
             <ul>
-              <li><strong>Framework</strong>: Next.js</li>
-              <li><strong>Database</strong>: Supabase</li>
-              <li><strong>CSS</strong>: TailwindCSS</li>
+              <li>
+                <strong>Artificial Intelligence:</strong> Python, TensorFlow Lite,
+                OpenCV, MediaPipe
+              </li>
+              <li>
+                <strong>Frontend:</strong> Next.js, React, Tailwind CSS
+              </li>
+              <li>
+                <strong>Backend:</strong> Node.js, Express, Supabase, PostgreSQL
+              </li>
+              <li>
+                <strong>Tools:</strong> Docker, Kubernetes, Linux, Raspberry Pi, Git
+              </li>
             </ul>
 
-            <br/>
+            <br />
 
-            <p>While I enjoy web development, my true passion lies in <strong>game development</strong> with <strong>Unity</strong>. As a dedicated gamer, I’ve spent countless hours playing immersive single-player games like <strong>Elden Ring</strong> and competing in multiplayer games like <strong>Valorant</strong>. Game development combines creativity and logic in a way that resonates deeply with me, allowing me to bring my love for gaming into my coding projects.</p>
-            <br/>
-            
-            <p>Beyond games, I’m actively engaged in <strong>cybersecurity</strong> and enjoy the challenges of <strong>CTF</strong> (Capture The Flag) exercises. I’m continuously expanding my knowledge in this field, aiming to build a solid foundation for a future career in cybersecurity.</p>
-            <br/>
-            <p>I love my work and take great enjoyment (and sometimes frustration!) in every project I take on. Feel free to explore my portfolio, and if you have any questions or are interested in collaborating, don’t hesitate to reach out to me on <a href="https://www.linkedin.com/in/souhail-smiri" target="_blank" rel="noopener noreferrer"><b>LinkedIn</b></a> or via email at <a href="mailto:souhail.smiriaa@gmail.com"><u>souhail.smiriaa@gmail.com</u></a>.</p>
+            <p>
+              Beyond software development, I'm interested in{" "}
+              <strong>cybersecurity</strong>, <strong>embedded systems</strong>, and{" "}
+              <strong>cloud technologies</strong>. I enjoy continuously learning new
+              technologies, experimenting with personal projects, and applying AI to
+              solve practical engineering challenges.
+            </p>
+
+            <br />
+
+            <p>
+              Outside of programming, I enjoy strategy and RPG games, exploring new
+              technologies, and challenging myself with projects that push me to learn
+              something new. I believe the best way to grow as an engineer is through
+              continuous learning, building, and sharing knowledge.
+            </p>
+
+            <br />
+
+            <p>
+              Feel free to explore my portfolio, and if you'd like to collaborate or
+              simply connect, don't hesitate to reach out on{" "}
+              <a
+                href="https://www.linkedin.com/in/souhail-smiri"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <b>LinkedIn</b>
+              </a>{" "}
+              or via email at{" "}
+              <a href="mailto:souhail.smiriaa@gmail.com">
+                <u>souhail.smiriaa@gmail.com</u>
+              </a>
+              .
+            </p>
           </div>
         </PageTop>
       </div>
